@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.bistu.edu.cs.mymusic.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ADE8E2">
+
+        <ImageButton
+            android:id="@+id/btn_refresh"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="@android:drawable/ic_popup_sync"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/btn_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@android:drawable/ic_menu_add"
+
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:divider="@null"
+        android:id="@+id/listWords"
+        />
+    <SeekBar
+        android:id="@+id/mSeekbar"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text=""
+        android:textSize="30sp"
+        android:id="@+id/tv1"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#ffff"
+        android:weightSum="3">
+
+        <ImageButton
+            android:id="@+id/btnPre"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:background="#ADE8E2"
+            android:src="@android:drawable/ic_media_previous" />
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:src="@android:drawable/ic_media_play"
+            android:background="#ADE8E2"
+            />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@android:drawable/ic_media_next"
+            android:background="#ADE8E2"
+            />
+    </LinearLayout>
+
+</LinearLayout>
